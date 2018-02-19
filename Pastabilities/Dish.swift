@@ -9,4 +9,13 @@
 import Foundation
 
 class Dish {
+    var name: String
+    var pasta: Pasta
+    var sauce: String
+
+    init(name: String, pasta: Pasta, sauce: String) {
+        self.name = name
+        self.pasta = pasta
+        self.sauce = sauce
+    }
 }
