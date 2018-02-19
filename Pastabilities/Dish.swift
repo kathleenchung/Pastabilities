@@ -12,10 +12,20 @@ class Dish {
     var name: String
     var pasta: Pasta
     var sauce: String
+    var containsDairy: Bool
 
-    init(name: String, pasta: Pasta, sauce: String) {
+    init(name: String, pasta: Pasta, sauce: String, containsDairy: Bool = false) {
         self.name = name
         self.pasta = pasta
         self.sauce = sauce
+        self.containsDairy = containsDairy
     }
+
+    enum Garnish {
+        case basil
+        case parsely
+        case parmesan
+    }
+
+    func garnish(with: Garnish...) { }
 }
